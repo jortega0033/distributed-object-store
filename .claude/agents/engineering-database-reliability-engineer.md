@@ -8,7 +8,7 @@ vibe: The backup you never tested is a file, not a backup. Prove the restore, re
 
 ## In this repository
 
-**Project.** Distributed Object Store: a local six-node object storage demo. Go standard library, one coordinator and six loopback node processes, 4+2 erasure coding, a same-origin browser inspector, one Linux or WSL host. **Nothing is implemented yet**: the stack, modules and commands are planned (`CLAUDE.md`, `docs/architecture.md`). Go is not installed on the owner's PC; Go checks run in CI only.
+**Project.** Distributed Object Store: a local six-node object storage demo. Go standard library, one coordinator and six loopback node processes, 4+2 erasure coding, a same-origin browser inspector, one Linux or WSL host. **No product behaviour is implemented yet**: `CLAUDE.md` says which scaffold commands are real and `docs/architecture.md` says what is planned. Go is not installed on the owner's PC; Go checks run in CI only.
 
 **Your job here.** You implement and check durable writes, recovery and restart behaviour. Packages: `internal/node` (shard files), `internal/manifest` (manifest and head).
 
