@@ -12,10 +12,10 @@ const version = "0.0.0-scaffold"
 const usage = `usage: objstore <command>
 
 commands:
-  serve    run the app (#2)
-  node     run one storage node (#4)
-  cluster  run six nodes and the coordinator (#4)
-  verify   run the recovery matrix (#7)
+  serve    run the app (planned: #2)
+  node     run one storage node (planned: #4)
+  cluster  run six nodes and the coordinator (planned: #4)
+  verify   run the recovery matrix (planned: #7)
 
 flags:
   --help     show this help
