@@ -6,7 +6,7 @@ Working instructions for this repository. Read this file first, then the documen
 
 A local demo for a developer learning distributed storage: upload a small synthetic file, see its data and parity shards on six loopback node processes, take two nodes offline, download the same bytes, replace the nodes and repair. Go standard library only, `127.0.0.1` only, Linux or WSL.
 
-**Nothing is implemented yet.** The repository holds the plan, the delivery tooling and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
+**Only the scaffold exists, with no product behaviour.** The repository holds the plan, the delivery tooling, the runnable scaffold (layout, stub commands, smoke tests, CI) and the backlog in epic #1. Commands marked planned below do not work yet. Do not describe a planned thing as working, and do not claim a passing baseline: there is none.
 
 ## Sources of truth
 
@@ -40,10 +40,10 @@ Go is not installed on the owner's PC and nothing is installed globally. **Go ch
 
 | Purpose | Command | Status |
 |---|---|---|
-| Build | `go build -o objstore ./cmd/objstore` | planned: real with the scaffold |
-| Format check (empty output is good) | `gofmt -l .` | planned: real with the scaffold |
-| Static check | `go vet ./...` | planned: real with the scaffold |
-| Tests | `go test ./...` | planned: real with the scaffold |
+| Build | `go build -o objstore ./cmd/objstore` | real (scaffold), verified in CI only |
+| Format check (empty output is good) | `gofmt -l .` | real (scaffold), verified in CI only |
+| Static check | `go vet ./...` | real (scaffold), verified in CI only |
+| Tests | `go test ./...` | real (scaffold), verified in CI only |
 | Run the app | `./objstore serve --data-dir ./data` | planned: #2 |
 | Run six nodes and the coordinator | `./objstore cluster --data-dir ./data` | planned: #4 |
 | Recovery matrix | `./objstore verify` | planned: #7 |
