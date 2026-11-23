@@ -1,0 +1,7 @@
+package coordinator
+
+import "testing"
+
+func TestPackageCompiles(t *testing.T) {
+	t.Parallel()
+}
