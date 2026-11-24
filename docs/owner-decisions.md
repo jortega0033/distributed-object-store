@@ -37,3 +37,14 @@ The plan leaves these open. Each is a recommendation by the orchestrator, adopte
 | #7 | Verification command | `./objstore verify` prints one line per check and exits non-zero on the first failure; CI runs it on Linux. |
 | all | Owner checks | Manual browser steps run in WSL or on a Linux host. |
 | none | Licence | MIT, already on `main` (commit `d099333`, `LICENSE`). No ticket depends on it and none changes it. |
+
+## Program decisions (owner, 2026-11-24)
+
+The owner accepted the goal and each suggestion below. They apply from the phase they name; the rules of `CLAUDE.md` hold for phase 1 as written.
+
+| Decision | Implemented in |
+|---|---|
+| The repository has a program goal above phase 1: a production-grade distributed object store in Go, in six phases. | Program issue #39 |
+| The first working end-to-end version is ticket #10. No new ticket is added for it. | Program issue #39 |
+| The S3 test suite needs a licence check. Suggested: fetch at a pinned version and run from outside the repository. | Program issue #39 |
+| "Go standard library only" and loopback-only stay. Objects written in phase 1's 4+2 layout stay readable later. | Program issue #39 |

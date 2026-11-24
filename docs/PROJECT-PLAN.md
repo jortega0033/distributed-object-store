@@ -1,5 +1,7 @@
 # Distributed Object Store
 
+> This document specifies phase 1 of the program in [#39](https://github.com/jortega0033/distributed-object-store/issues/39). Hour figures in it are early estimates for that phase; its open tickets add up to 76 to 102 hours (2026-11-24). Work that it defers is planned in the later phases only where the program names it.
+
 Planning draft for a Linux or WSL prototype. Effort estimates cover future implementation and verification.
 
 ## Product requirements
