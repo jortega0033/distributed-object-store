@@ -8,7 +8,7 @@ Only the scaffold exists (layout, stub commands, smoke tests, CI); the implement
 - [Technical design](docs/PROJECT-PLAN.md#technical-design)
 - [Implementation backlog and epic](https://github.com/jortega0033/distributed-object-store/issues)
 
-Estimated implementation and verification effort is 21–33 engineering hours.
+The first plan of phase 1 said 21–33 engineering hours. Its open tickets, with tests and review, add up to 76 to 102 hours; the whole program is larger and is described below. All figures are estimates.
 
 ## Program goal
 
